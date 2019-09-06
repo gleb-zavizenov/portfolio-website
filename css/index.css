@@ -1,0 +1,103 @@
+/* Styles for the home page */
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../images/background.png);
+    background-size:cover;
+}
+
+.container{
+    margin-top:50px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-name{
+    width:100%;
+}
+
+@keyframes white-fill{
+    from{
+        fill:transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+@keyframes forward-animation{
+    to{
+        stroke-dashoffset: 0px;
+    }
+}
+
+.job-title{
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-top:40px;
+}
+
+.action-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:580px;
+    margin-top:60px;
+}
+
+.filled-btn{
+    height:60px;
+    width:250px;
+    background-color: #6B8F71;
+    text-decoration: none;
+    transition: 0.7s ease-in-out all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filled-btn:hover{
+    background-color: #91E19E;
+    box-shadow: 0 0 10px rgba(145, 225, 158, 0.5);
+}
+
+.btn-link{
+    color:#ffffff;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 270px;
+    margin-top:80px;
+}
+
+.social-icon{
+    width:40px;
+    height:40px;
+}
+
+.social-icon-svg{
+    width:100%;
+    height:100%;
+    fill:#ffffff;
+    transition: 0.7s ease-in-out all;
+}
+
+.social-icon-svg:hover{
+    fill:#91E19E;
+    box-shadow: 0 0 10px rgba(145, 225, 158, 0.5);
+}
