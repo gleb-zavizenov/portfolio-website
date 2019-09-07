@@ -1,0 +1,10 @@
+/* Basic styles for all pages */
+.hidden{
+    display: none;
+}
+
+:root{
+    --green:#6B8F71;
+    --hover:#91E19E;
+    --dark:#000F25;
+}
