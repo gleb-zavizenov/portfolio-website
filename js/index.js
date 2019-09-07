@@ -5,6 +5,8 @@ let largeLetters = document.querySelectorAll(".large-name path");
 let largeLastletter = largeLetters[largeLetters.length - 1];
 let smallAnimatedName = document.querySelector(".small-name");
 let largeAnimatedName = document.querySelector(".large-name");
+const scene = document.getElementById('scene');
+let parallaxInstance = new Parallax(scene);
 
 //Functions
 function animateLetters(){
@@ -29,3 +31,4 @@ function startFill(){
 window.addEventListener("load", animateLetters);
 smallLastLetter.addEventListener("animationend", startFill);
 largeLastletter.addEventListener("animationend", startFill);
+

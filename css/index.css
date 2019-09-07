@@ -1,4 +1,7 @@
 /* Styles for the home page */
+.hidden{
+    display: none;
+}
 
 /* Styles for the large desktop version */
 body{
@@ -9,6 +12,48 @@ body{
     justify-content: center;
     background:url(../images/background.png);
     background-size:cover;
+    position: relative;
+}
+
+/* Positioning for small paralax elements */
+#scene{
+    position:fixed;
+}
+
+.diamond-icon{
+    top:170px !important;
+    left:-620px !important;
+    width:30px;
+}
+
+.coding-icon{
+    top:200px !important;
+    left:600px !important;
+    width:30px;
+}
+
+.internet-icon{
+    top:250px !important;
+    left:350px !important;
+    width:30px;
+}
+
+.modeling-icon{
+    top:50px !important;
+    left:450px !important;
+    width:30px;
+}
+
+.layers-icon{
+    top:70px !important;
+    left:-420px !important;
+    width:30px;
+}
+
+.css-icon{
+    top:260px !important;
+    left:-380px !important;
+    width:30px;
 }
 
 .container{
@@ -127,6 +172,10 @@ body{
 
 /* Styles for the tablet version <960px */
 @media screen and (max-width:960px){
+    #scene{
+        display: none;
+    }
+    
     .container{
         width:720px;
     }
