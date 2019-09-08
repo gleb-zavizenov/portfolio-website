@@ -36,6 +36,11 @@ main{
     justify-content: center;
 }
 
+.main-left-picture{
+    display: flex;
+    align-items: flex-end;
+}
+
 .main-left-photo{
     width:100%;
 }
@@ -312,6 +317,21 @@ main{
 
     main{
         margin-top:50px;
+    }
+
+    .main-left{
+        order:-1;
+        margin-bottom: 60px;
+        margin-top:10px;
+    }
+
+    .main-left-photo{
+        display: block;
+        width:100%;
+    }
+
+    .main-right{
+        margin-bottom: 30px;
     }
 
     .main-right-title{
