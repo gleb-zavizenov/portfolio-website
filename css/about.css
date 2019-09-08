@@ -1,6 +1,6 @@
-/* Styles for the portfolio page */
+/* Styles for the about me page */
 
-/*Styles for the desktop version */
+/* Styles for the desktop version */
 body{
     width:100%;
     height:100vh;
@@ -18,127 +18,10 @@ body{
     align-items: center;
 }
 
-.works{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap:wrap;;
-    margin-top:100px;
-}
-
-.works-piece{
-    width:380px;
-    height:350px;
-    overflow:hidden;
-    position:relative;
-    transition: 0.7s ease-in-out box-shadow;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom:30px;
-}
-
-.works-piece:hover{
-    box-shadow: 0 0 20px rgba(145, 225, 158, 0.2);
-}
-
-.works-piece:hover .works-piece-overlay{
-    opacity:1;
-}
-
-.works-piece-img{
-    width:100%;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-
-.works-piece-overlay{
-    opacity: 0;
-    width:100%;
-    height:100%;
-    z-index: 10;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0,15,37,0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 0.7s ease-in-out opacity;
-}
-
-.overlay-name{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 24px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.overlay-type{
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top:15px;
-    margin-bottom: 30px;
-}
-
-.stroke-btn{
-    width:200px;
-    height:40px;
-    border: 2px solid var(--green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: 0.7s ease-in-out all;
-}
-
-.stroke-btn:hover{
-    background-color: var(--hover);
-    border:2px solid transparent;
-    box-shadow: 0 0 10px rgba(145, 225, 158, 0.5);
-}
-
-.stroke-btn-text{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-/* Styles for small desktops <1200px */
-@media screen and (max-width:1200px){
-    .container{
-        width:960px;
-    }
-
-    .works-piece{
-        width:310px;
-        height:280px;
-    }
-}
-
 /* Styles for the tablet version <960px */
 @media screen and (max-width:960px){
     .container{
         width:720px;
-    }
-
-    .works-piece{
-        width:345px;
-        height:315px;
-    }
-
-    .works-piece-overlay{
-        opacity: 1;
     }
 }
 
@@ -151,10 +34,6 @@ body{
 
     .right-header{
         display: none;
-    }
-
-    .works{
-        margin-top: 50px;
     }
 
     .burger-icon{
