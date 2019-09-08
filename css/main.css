@@ -1,0 +1,64 @@
+/* Basic styles for all pages */
+.hidden{
+    display: none;
+}
+
+:root{
+    --green:#6B8F71;
+    --hover:#91E19E;
+    --dark:#000F25;
+}
+
+header{
+    margin-top:30px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header{
+    width:58px;   
+}
+
+.left-header-icon path{
+    fill:white;
+}    
+
+.left-header-icon:hover path{
+    fill:var(--hover);
+    transition: fill 0.7s ease-in-out;
+}
+
+.right-header{
+    width:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-header-link{
+    text-decoration: none;
+    color:#ffffff;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.right-header-link-active{
+    color:var(--green);
+}
+
+.right-header-link:hover{
+    color:var(--hover);
+    transition: 0.7s ease-in-out color;
+}
+
+.burger-icon{
+    display: none;
+}
+
+.popup-menu{
+    display: none;
+}

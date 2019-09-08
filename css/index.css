@@ -1,7 +1,4 @@
 /* Styles for the home page */
-.hidden{
-    display: none;
-}
 
 /* Styles for the large desktop version */
 body{
@@ -56,6 +53,7 @@ body{
     width:30px;
 }
 
+/* The rest of styles */
 .container{
     margin-top:100px;
     width: 1200px;
@@ -167,6 +165,18 @@ body{
 
     .job-title{
         font-size:36px;
+    }
+
+    .diamond-icon{
+        left:-530px !important;
+    }
+
+    .coding-icon{
+        left:520px !important;
+    }
+
+    .internet-icon{
+        left:330px !important;
     }
 }
 
