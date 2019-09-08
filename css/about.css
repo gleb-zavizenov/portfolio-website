@@ -4,6 +4,7 @@
 body{
     width:100%;
     height:100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +17,181 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:40px;
+}
+
+.main-left{
+    width:420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-left-photo{
+    width:100%;
+}
+
+.main-left-socials{
+    width: 100%;
+    height:120px;
+    background: url("../images/small-bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons{
+    margin-top:0px;
+}
+
+.main-right{
+    width:700px;
+}
+
+.main-right-name{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.main-right-title{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    text-align:left;
+    color: #FFFFFF;
+    margin-top:10px;
+    margin-bottom:45px;
+}
+
+.main-right-heading{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom:25px;
+}
+
+.main-right-history{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+}
+
+.main-right-development{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.development-tool{
+    width:60px;
+    margin-right:20px;
+}
+
+.development-tool:last-child{
+    margin-right:0px;
+}
+
+.main-right-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.design-tool{
+    width:60px;
+    margin-right:20px;
+}
+
+.design-tool:last-child{
+    margin-right:0px;
+}
+
+/* Styles for small desktops <1200px */
+@media screen and (max-width:1200px){
+    .container{
+        width:960px;
+    }
+
+    .main-right{
+        width:480px;
+    }
+
+    .development-tool, .design-tool{
+        width:50px;
+    }
 }
 
 /* Styles for the tablet version <960px */
 @media screen and (max-width:960px){
+    body{
+        overflow:scroll;
+    }
+
     .container{
         width:720px;
+    }
+
+    main{
+        flex-direction: column;
+        height:100%;
+        justify-content: center;
+        margin-top:100px;
+    }
+
+    .main-left{
+        order:2;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        margin-top:60px;
+        margin-bottom:-20px;
+    }
+
+    .main-left-photo{
+        display: none;
+    }
+
+    .main-right{
+        width:100%;
+        text-align:center;
+        justify-content: center;
+    }
+
+    .main-right-name, .main-right-title{
+        text-align: center;
+    }
+
+    .main-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-right-development{
+        width:560px;
+        justify-content: center;
+    }
+
+    .main-left-social{
+        width:100%;
     }
 }
 
@@ -139,11 +309,35 @@ body{
     .popup-menu-link-active{
         color:var(--green);
     }
+
+    main{
+        margin-top:50px;
+    }
+
+    .main-right-title{
+        margin-top:15px;
+    }
+
+    .main-right-development{
+        width:100%;
+    }
+
+    .development-tool{
+        width:35px;
+    }
 }
 
 /* Styles for small mobile phones <320px */
 @media screen and (max-width:320px){
     .container{
         width:270px;
+    }
+
+    .development-tool{
+        width:30px;
+    }
+
+    .social-icons{
+        width:240px;
     }
 }
