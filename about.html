@@ -48,7 +48,11 @@
         </header>
         <main>
             <div class="main-left">
-                <img src="images/my-photo.png" class="main-left-photo"></img>
+                <picture class="main-left-picture">
+                    <source srcset="images/my-photo-320.png" media="(max-width:720px) and (min-width:321px)" class="main-left-photo">
+                    <source srcset="images/my-photo-270.png" media="(max-width:320px)" class="main-left-photo">
+                    <img src="images/my-photo.png" class="main-left-photo"></img>
+                </picture>
                 <div class="main-left-socials">
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/gleb-zavizenov-a65913178/" class="social-icon" target="_blank">
