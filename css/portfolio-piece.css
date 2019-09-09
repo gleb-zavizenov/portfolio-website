@@ -1,0 +1,114 @@
+/* Styles for the desktop version */
+body{
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+main{
+    margin-top:60px;
+    align-items:flex-start;
+}
+
+.main-left{
+    width:600px;
+}
+
+.main-left-picture{
+    width:100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-left-picture source{
+    display: none;
+}
+
+.main-right{
+    width:550px;
+}
+
+.main-right-name{
+    font-size:44px;
+}
+
+@keyframes img-slidein{
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes info-slidein{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* Styles for small desktops <1200px */
+@media screen and (max-width:1200px){
+
+    .main-left{
+        width:500px;
+    }
+
+    .main-right{
+        width:420px;
+    }
+}
+
+/* Styles for the tablet version <960px */
+@media screen and (max-width:960px){
+    body{
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+
+    main{
+        margin-top:60px;
+    }
+
+    .main-left{
+        order:-2;
+        margin-top:0px;
+        margin-bottom: 40px;
+    }
+
+    .main-right{
+        margin-bottom: 0px;
+    }
+
+    .main-left,.main-right{
+        width:100%;
+    }
+
+    .main-left-picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-left-picture source{
+        display: none;
+    }
+
+    .main-left-photo{
+        display: block;
+    }
+}
+
+/* Styles for the mobile version <720px */
+@media screen and (max-width:720px){
+    .main-left{
+        margin-top:10px;
+        margin-bottom: 50px;
+    }
+
+    .main-right-name{
+        font-size:36px;
+    }
+}
